@@ -1,2 +1,4 @@
 USAGE:
-    To setup the env, "docker compose up". You will see the nodes, head and database appear in docker.
+    NULL
+What for ?
+    Used to test and scale plugins in slurm.
