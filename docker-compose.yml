@@ -1,0 +1,4 @@
+services:
+  head:
+    volumes:
+      -./head/conf-files:/.conf
