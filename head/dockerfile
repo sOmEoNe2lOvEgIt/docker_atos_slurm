@@ -1,3 +1,6 @@
-FROM mariadb
+FROM centos:7
+
 RUN mkdir /.conf
-CMD echo "It's aliiiveee!"
+RUN yum install zsh -y
+
+ENTRYPOINT [ "/bin/zsh" ] 
