@@ -1,2 +1,2 @@
 What for?
-	This repo is used to keep the setup for a slurm docker that emulates a cluster.
+	This repo contains a simple docker image that runs slurmctld in centos. It also contains the dockerfile to build the image.
