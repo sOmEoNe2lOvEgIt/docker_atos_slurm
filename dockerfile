@@ -2,7 +2,7 @@ FROM centos:7
 
 #Import necessary rpms and conf files
 #(conf files will be in readonly shared folder afterwards)
-RUN mkdir /slurm_rpm
+RUN mkdir /slurm_rpm && mkdir /var/log/slurm/
 COPY ./etc/slurm_conf/* /etc/slurm/
 COPY ./etc/slurm_rpm/ /slurm_rpm/
 
