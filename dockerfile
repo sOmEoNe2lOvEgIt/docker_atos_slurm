@@ -12,7 +12,7 @@ RUN /usr/sbin/create-munge-key -r
 
 #Install slurm and plugins from imported rpms
 RUN useradd slurm
-RUN mkdir -m 777 /opt/SLURM
+RUN mkdir /opt/SLURM && chown -R -H slurm /opt/SLURM
 RUN yum install ./slurm_rpm/* -y
 
 #Cleanup after install
