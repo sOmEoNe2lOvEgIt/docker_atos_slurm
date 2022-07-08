@@ -8,7 +8,7 @@ COPY ./etc/slurm_rpm/ /slurm_rpm/
 #Install munge for slurm
 RUN yum install epel-release -y
 RUN yum install munge munge-libs munge-devel libnsl -y
-RUN /usr/sbin/create-munge-key -r
+COPY ./etc/munge/* /etc/munge/
 
 #Install slurm and plugins from imported rpms
 RUN useradd slurm
