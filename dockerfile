@@ -20,7 +20,7 @@ RUN rm -d -r /slurm_rpm
 ##RUN yum clean all
 ##This ^ command makes the image heavyer for some reason...##
 RUN rm -d -r /var/cache/*
-RUN rm /tmp/*
+RUN rm -r /tmp/*
 RUN touch /etc/hostname
 RUN echo "slurm_controller_daemon" > /etc/hostname
 
